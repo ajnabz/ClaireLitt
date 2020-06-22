@@ -47,11 +47,6 @@
     transition: 1s;
 }
 
-
-
-
-
-
 .material-icons {
     color: white;
     padding: 5px 16px;
@@ -73,7 +68,7 @@
     color: white;
     padding: 5px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .burger a.icon {
@@ -97,8 +92,9 @@
   color: black;
 }
 
-.burger-img {
-    height: 20px;
+.burger-logo {
+    height: 25px;
+    vertical-align: middle;
 }
 
 .container {
