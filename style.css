@@ -198,8 +198,14 @@
 }
 
 .exhibitionImg {
+    background-image: url("GAINSBOROUGH1FINAL2012CROP.jpg");
+    min-height: 500px; 
     width: 100%;
-    opacity: 0.2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2
 }
 
 .exhibitionText {
