@@ -88,14 +88,74 @@
 }
 
 .burger a:hover {
-  background-color: #155D64;
-  color: black;
+    background-color: #155D64;
+    color: black;
 }
 
 .burger-logo {
     height: 25px;
     vertical-align: middle;
 }
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
 
 .container {
     position: relative;
@@ -113,6 +173,7 @@
 .title {
     letter-spacing: 0.5px;
     font-size: 3.25em;
+    font-weight: 500;
 }
 
 .subtitle {
@@ -125,7 +186,7 @@
     .title {
         font-size: 4.5em;
     }
-    
+
     .subtitle{
         font-size: 2em;
     }
@@ -135,7 +196,7 @@
     .title {
         font-size: 5.5em;
     }
-    
+
     .subtitle{
         font-size: 3em;
     }
@@ -175,7 +236,7 @@
     .triShape {
         display: none;
     }
-    
+
     .largeScreenTriShape {
         display: block;
         position: absolute;
@@ -205,7 +266,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.2
+
 }
 
 .exhibitionText {
@@ -264,31 +325,249 @@ hr {
     margin: auto;
     height: 2px;
     background: grey;
+    border-radius: 5px;
 }
 
-
-
-
-
-.o{
-    width: 33%;
-}
-
-.i {
-    width: 100%;
-}
-
-
-.wow {
-    width: 30vw;
-    padding-top: 2em;
-    background-color: #2295A0;
-}
-
-.uo {
-    width: 30vw;
-    padding: 0.5em;
-    vertical-align: top;
+.parallaxContainer {
+    position: relative;
     text-align: center;
-    background-color: #2295A0;
+    color: black;
+    height: 300px;
+    overflow: hidden;
+}
+
+.parallax-1 {
+    background-image: url("ATOS%20MEETING%20ROOM%20WINDOW%20DISPLAY.jpg");
+    min-height: 300px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.words {
+    background-color: #EDEDED;
+    height: 20vh;
+    padding-bottom: 50em;
+}
+
+.height {
+    height: 50vh;
+}
+
+
+
+
+
+
+/*PORTFOLIO PAGE*/
+
+.portfolio-tr {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.portfolio-td {
+    text-align: center;
+    width: 50vw;
+}
+
+.grid {
+    text-align: center;
+    border-collapse: separate;
+}
+
+.grid td {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    background-color: white;
+    z-index: 1000;
+}
+
+.grid td:hover .overlay {
+    opacity: 0.6;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+.portfolio-text {
+    width: 50vw;    
+}
+
+
+
+
+
+.flex-container-blue {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #155D64;
+}
+
+.flex-container-white {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.flex-container > div {
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+div.gains2010, div.gains2011, div.bbc-features, div.bbc-cart, div.realfood, div.canopy, div.magnum, div.moss, div.audiolab {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 50vw;
+}
+
+div.gains2012, div.garmin {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 50vw;
+}
+
+.gains2010 {
+    background-image: url("Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg");
+}
+
+.gains2010:hover {
+    background-image: url("Exhibition/Gainsborough%20working%20CROP.png");
+    background-size: contain;
+}
+
+.gains2011 {
+    background-image: url("Exhibition/Gains%202010%20a.jpg");
+}
+
+.gains2011:hover {
+    background-image: url("Exhibition/GAINSBOROUGH%20SPECIALIST%20BATHING%20PLAN.jpg");
+    background-size: contain;
+}
+
+.gains2012 {
+    background-image: url("Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg");
+    background-size: contain;
+}
+
+.bbc-features {
+    background-image: url("Exhibition/GOOD%20FOOD%20SUBS%20LOUNGE%202018%20with%20graphics%20higher%20res.jpg");
+}
+
+.bbc-features:hover {
+    background-image: url("Exhibition/BBC%20GOOD%20FOOD%20SHOW.jpg");
+}
+
+.bbc-cart {
+    background: url("Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg");
+}
+
+.garmin {
+    background: url("Exhibition/Garmin.jpg");
+    background-size: contain;
+}
+
+.realfood {
+    background: url("Exhibition/RESTAURANTS.jpg");
+}
+
+.realfood:hover {
+    background: url("Exhibition/REAL%20FOOD%20THEATRE.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.canopy {
+    background: url("Exhibition/CANOPY%20FINAL2.jpg");
+}
+
+.magnum {
+    background: url("Exhibition/Magnum%20TS%20Final%20drawing%20Portfolio.jpg");
+}
+
+.moss {
+    background: url("Exhibition/Moss%20Electrical%20final.jpg");
+}
+
+.audiolab {
+    background: url("Exhibition/AudioLab%20theatre%20Plasa%202013%20CROP.jpg");
+}
+
+
+/*CONTACT PAGE*/
+
+.contact-subtitle {
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+form > label {
+    color: black;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #155D64;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #11494F;
+}
+
+.contact-container {
+    padding: 20px;
 }
