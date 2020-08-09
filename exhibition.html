@@ -24,13 +24,16 @@
                 <a href="service.html">Service</a>
                 <a href="index.html">Home</a>
             </div>
-            <a href="index.html" class="active"><img src="CL%20green.png" class="burger-logo"></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="index.html" class="active"><img src="CL%20green.png" class="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
 
-<!--        <h1 class="title">Exhibiton Stands</h1>-->
+
+
+
+        <!--        <h1 class="title">Exhibiton Stands</h1>-->
 
         <div class="grid">
             <div class="flex-container-blue">
@@ -38,39 +41,161 @@
                     <p>Gainsborough Specialist Bathing Naidex 2010</p>
                     <p>Some text</p>
                 </div>
-                <div class="gains2010"></div>
-            </div>
-        </div>
-        
-        <div class="grid">
-            <div class="flex-container-white">
-                <div class="gains2011"></div>
-                <div class="portfolio-text">
-                    <p>Gainsborough Specialist Bathing Naidex 2011</p>
-                    <p>Some text</p>
+
+                <div class="column">
+                    <img src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 2</div>
+                            <img src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 2</div>
+                            <img src="Exhibition/Gainsborough%20working%20CROP.png" style="height:100vh; width: 100%;">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="modal-column">
+                            <img class="demo cursor" src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gainsborough Specialist Bathing 2010">
+                        </div>
+                        <div class="modal-column">
+                            <img class="demo cursor" src="Exhibition/Gainsborough%20working%20CROP.png" style="height:20vh;" onclick="currentSlide(2)" alt="Gainsborough Working Drawing 2010">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-         <div class="grid">
+        <div class="grid">
+            <div class="flex-container-blue">
+                <div class="flex-container-white">
+                    <div class="column">
+                        <div class="column">
+                            <img src="Exhibition/Gains%202010%20a.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModalGains2011();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+
+                        <div id="gains2011" class="modal">
+                            <span class="close cursor" onclick="closeModalGains2011()">&times;</span>
+                            <div class="modal-content">
+
+                                <div class="mySlides2">
+                                    <div class="numbertext">1 / 2</div>
+                                    <img src="Exhibition/Gains%202010%20a.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides2">
+                                    <div class="numbertext">2 / 2</div>
+                                    <img src="Exhibition/GAINSBOROUGH%20SPECIALIST%20BATHING%20PLAN.jpg" style="width: 100%;">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <div class="caption-container">
+                                    <p id="caption2"></p>
+                                </div>
+
+                                <div class="modal-column">
+                                    <img class="demo cursor" src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gainsborough Specialist Bathing 2010">
+                                </div>
+                                <div class="modal-column">
+                                    <img class="demo cursor" src="Exhibition/Gainsborough%20working%20CROP.png" style="height:20vh;" onclick="currentSlide(2)" alt="Gainsborough Working Drawing 2010">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-text">
+                        <a name="gains2011Link">Gainsborough Specialist Bathing Naidex 2011</a>
+                        <p>Some text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
             <div class="flex-container-blue">
                 <div class="portfolio-text">
                     <p>Gainsborough Specialist Bathing Naidex 2012</p>
                     <p>Some text</p>
                 </div>
-                <div class="gains2012"></div>
-            </div>
-        </div>
-        
-         <div class="grid">
-            <div class="flex-container-white">
-                <div class="bbc-features"></div>
-                <div class="portfolio-text">
-                    <p>BBC Good Food Show Features 2012 - 2020</p>
-                    <p>Some text</p>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModalGains2012();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                </div>
+
+                <div id="gains2012" class="modal">
+                    <span class="close cursor" onclick="closeModalGains2012()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlidesGains2012">
+                            <div class="numbertext">1 / 1</div>
+                            <img src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:100%">
+                        </div>
+
+                        <div class="caption-container">
+                            <p id="captionGains2012"></p>
+                        </div>
+
+                        <div class="modal-column">
+                            <img class="demo cursor" src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gainsborough Specialist Bathing Naidex 2012">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="grid">
+            <div class="flex-container-blue">
+                <div class="flex-container-white">
+                    <div class="column">
+                        <img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW.jpg" alt="Nature" style="width:100%" onclick="displayImg3(this);">
+                    </div>
+                    <div class="column">
+                        <img src="Exhibition/GOOD%20FOOD%20SUBS%20LOUNGE%202018%20with%20graphics%20higher%20res.jpg" alt="Snow" style="width:100%" onclick="displayImg3(this);">
+                    </div>
+
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg3" style="width:100%">
+                        <div id="imgtext3"></div>
+                    </div>
+
+                    <div class="portfolio-text">
+                        <p>BBC Good Food Show Features 2012 - 2020</p>
+                        <p>Some text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         <div class="grid">
             <div class="flex-container-blue">
@@ -78,10 +203,44 @@
                     <p>BBC Good Food Show Sales Cart</p>
                     <p>Some text</p>
                 </div>
-                <div class="bbc-cart"></div>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModalBbcCart();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                </div>
+
+                <div id="BbcCart" class="modal">
+                    <span class="close cursor" onclick="closeModalBbcCart()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlidesBbcCart">
+                            <div class="numbertext">1 / 1</div>
+                            <img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:100%">
+                        </div>
+
+                        <div class="caption-container">
+                            <p id="captionBbcCart"></p>
+                        </div>
+
+                        <div class="modal-column">
+                            <img class="demo cursor" src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:100%" onclick="currentSlide(1)" alt="BBC Good Food Show Sales Cart">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
+
+
+
+
+
+
+
+
+
+
         <div class="grid">
             <div class="flex-container-white">
                 <div class="garmin"></div>
@@ -91,7 +250,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="flex-container-blue">
                 <div class="portfolio-text">
@@ -101,7 +260,7 @@
                 <div class="realfood"></div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="flex-container-white">
                 <div class="canopy"></div>
@@ -111,36 +270,45 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="flex-container-blue">
                 <div class="portfolio-text">
-                    <p>Magnum Tattoo Stand</p>
+                    <a id="magnumLink">Magnum Tattoo Stand</a>
                     <p>Some text</p>
                 </div>
                 <div class="magnum"></div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="flex-container-white">
                 <div class="moss"></div>
                 <div class="portfolio-text">
-                    <p>Moss Electrical Stand</p>
+                    <a name="mossLink">Moss Electrical Stand</a>
                     <p>Some text</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="flex-container-blue">
                 <div class="portfolio-text">
                     <p>AudioLab Theatre</p>
                     <p>Some text</p>
                 </div>
-                <div class="audiolab"></div>
+                <div class="container">
+
+
+                </div>
             </div>
         </div>
 
     </body>
+    
+    <footer>
+        <a>Built by: Abbie Prescott</a>
+        <a href="privacyPolicy.html">Privacy Policy</a>
+        <a href="contact.html">Contact Us</a>
+    </footer>
 </html>
