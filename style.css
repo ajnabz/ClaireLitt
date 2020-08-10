@@ -149,6 +149,7 @@ div.heading {
 
 .indexIntroTitle {
     padding: 1em 0.5em 0.2em 0.5em;
+    text-align: center;
 }
 
 .indexServiceTitle {
@@ -159,14 +160,13 @@ div.heading {
     text-align: center;
 }
 
-.intro > p {
-    padding: 1em 1em;
+.intro {
+    background-color: #A8ACAC;
 }
 
-.quote {
-    font-size: 3em;
-    color: black;
-    font-weight: 600;
+.intro > p {
+    padding: 1em 1em;
+    text-align: center;
 }
 
 .exhibitionText {
@@ -176,21 +176,6 @@ div.heading {
     transform: translate(-50%, -50%);
     width: 80vw;
 }
-/*
-
-.servicesContainer {
-position: relative;
-text-align: center;
-color: black;
-height: 100vh;
-overflow: hidden;
-}
-
-.exhibitionImg {
-width: 100%;
-opacity: 0.2;
-}
-*/
 
 .serviceTable {
     padding: 1em;
@@ -222,19 +207,30 @@ hr {
     position: relative;
     text-align: center;
     color: black;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
 }
 
 .parallax-1 {
     background-image: url("Interior/BAYER%20FRONT%20FINAL.jpg");
-    min-height: 300px; 
+    min-height: 400px; 
     width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
+}
+
+.quote {
+    font-size: 1.8em;
+    color: black;
+    font-weight: 600;
+}
+
+.quoteSub {
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 .flex-container {
