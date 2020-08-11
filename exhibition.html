@@ -31,148 +31,115 @@
         </div>
 
 
-
-
         <!--        <h1 class="title">Exhibiton Stands</h1>-->
 
-        <div class="grid">
-            <div class="flex-container-blue">
-                <div class="portfolio-text">
-                    <p>Gainsborough Specialist Bathing Naidex 2010</p>
-                    <p>Some text</p>
-                </div>
+        <div id="wrapper">
+            <div class="grid">
+                <div class="flex-container-blue">
+                    <div class="portfolio-text">
+                        <p>Gainsborough Specialist Bathing Naidex 2010</p>
+                        <p>Some text</p>
+                    </div>
 
-                <div class="column">
-                    <img src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                </div>
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 2</div>
+                                    <a href="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" target="_blank"><img src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%"></a>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="numbertext">2 / 2</div>
+                                    <a href="Exhibition/Gainsborough%20working%20CROP.png" target="_blank"><img src="Exhibition/Gainsborough%20working%20CROP.png" style="width:100%"></a>
+                                </div>
 
-                <div id="myModal" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
-                    <div class="modal-content">
-
-                        <div class="mySlides">
-                            <div class="numbertext">1 / 2</div>
-                            <img src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">2 / 2</div>
-                            <img src="Exhibition/Gainsborough%20working%20CROP.png" style="height:100vh; width: 100%;">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                        <div class="caption-container">
-                            <p id="caption"></p>
-                        </div>
-
-                        <div class="modal-column">
-                            <img class="demo cursor" src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gainsborough Specialist Bathing 2010">
-                        </div>
-                        <div class="modal-column">
-                            <img class="demo cursor" src="Exhibition/Gainsborough%20working%20CROP.png" style="height:20vh;" onclick="currentSlide(2)" alt="Gainsborough Working Drawing 2010">
+                                <a class="prev" onclick="plusDivs(-1, 0)">&#10094;</a>
+                                <a class="next" onclick="plusDivs(1, 0)">&#10095;</a>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 0)"></span>
+                                <span class="dot" onclick="currentDiv(2, 0)"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="grid">
-            <div class="flex-container-blue">
+            <div class="grid">
                 <div class="flex-container-white">
                     <div class="column">
-                        <div class="column">
-                            <img src="Exhibition/Gains%202010%20a.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModalGains2011();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-
-                        <div id="gains2011" class="modal">
-                            <span class="close cursor" onclick="closeModalGains2011()">&times;</span>
-                            <div class="modal-content">
-
-                                <div class="mySlides2">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
                                     <div class="numbertext">1 / 2</div>
-                                    <img src="Exhibition/Gains%202010%20a.jpg" style="width:100%">
+                                    <a href="Exhibition/Gains%202010%20a.jpg" target="_blank"><img src="Exhibition/Gains%202010%20a.jpg" style="width:100%"></a>
                                 </div>
-
-                                <div class="mySlides2">
+                                <div class="mySlides fade">
                                     <div class="numbertext">2 / 2</div>
-                                    <img src="Exhibition/GAINSBOROUGH%20SPECIALIST%20BATHING%20PLAN.jpg" style="width: 100%;">
+                                    <a href="Exhibition/GAINSBOROUGH%20SPECIALIST%20BATHING%20PLAN.jpg" target="_blank"><img src="Exhibition/GAINSBOROUGH%20SPECIALIST%20BATHING%20PLAN.jpg" style="width:100%"></a>
                                 </div>
 
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                <div class="caption-container">
-                                    <p id="caption2"></p>
-                                </div>
-
-                                <div class="modal-column">
-                                    <img class="demo cursor" src="Exhibition/GAINSBOROUGHSPECIALIST%20BATHING%202010.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gainsborough Specialist Bathing 2010">
-                                </div>
-                                <div class="modal-column">
-                                    <img class="demo cursor" src="Exhibition/Gainsborough%20working%20CROP.png" style="height:20vh;" onclick="currentSlide(2)" alt="Gainsborough Working Drawing 2010">
-                                </div>
+                                <a class="prev" onclick="plusDivs(-1, 1)">&#10094;</a>
+                                <a class="next" onclick="plusDivs(1, 1)">&#10095;</a>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 1)"></span>
+                                <span class="dot" onclick="currentDiv(2, 1)"></span>
                             </div>
                         </div>
                     </div>
-
                     <div class="portfolio-text">
                         <a name="gains2011Link">Gainsborough Specialist Bathing Naidex 2011</a>
                         <p>Some text</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="grid">
-            <div class="flex-container-blue">
-                <div class="portfolio-text">
-                    <p>Gainsborough Specialist Bathing Naidex 2012</p>
-                    <p>Some text</p>
-                </div>
-
-                <div class="row">
-                    <div class="column">
-                        <img src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModalGains2012();currentSlide(1)" class="hover-shadow cursor">
+            <div class="grid">
+                <div class="flex-container-blue">
+                    <div class="portfolio-text">
+                        <p>Gainsborough Specialist Bathing Naidex 2012</p>
+                        <p>Some text</p>
                     </div>
-                </div>
 
-                <div id="gains2012" class="modal">
-                    <span class="close cursor" onclick="closeModalGains2012()">&times;</span>
-                    <div class="modal-content">
-
-                        <div class="mySlidesGains2012">
-                            <div class="numbertext">1 / 1</div>
-                            <img src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:100%">
-                        </div>
-
-                        <div class="caption-container">
-                            <p id="captionGains2012"></p>
-                        </div>
-
-                        <div class="modal-column">
-                            <img class="demo cursor" src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gainsborough Specialist Bathing Naidex 2012">
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" target="_blank"><img src="Exhibition/GAINSBOROUGH1FINAL2012CROP.jpg" style="width:100%"></a>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 2)"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="grid">
-            <div class="flex-container-blue">
+            <div class="grid">
                 <div class="flex-container-white">
                     <div class="column">
-                        <img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW.jpg" alt="Nature" style="width:100%" onclick="displayImg3(this);">
-                    </div>
-                    <div class="column">
-                        <img src="Exhibition/GOOD%20FOOD%20SUBS%20LOUNGE%202018%20with%20graphics%20higher%20res.jpg" alt="Snow" style="width:100%" onclick="displayImg3(this);">
-                    </div>
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 2</div>
+                                    <a href="Exhibition/BBC%20GOOD%20FOOD%20SHOW.jpg" target="_blank"><img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW.jpg" style="width:100%"></a>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="numbertext">2 / 2</div>
+                                    <a href="Exhibition/GOOD%20FOOD%20SUBS%20LOUNGE%202018%20with%20graphics%20higher%20res.jpg" target="_blank"><img src="Exhibition/GOOD%20FOOD%20SUBS%20LOUNGE%202018%20with%20graphics%20higher%20res.jpg" style="width:100%"></a>
+                                </div>
 
-                    <div class="container">
-                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg3" style="width:100%">
-                        <div id="imgtext3"></div>
+                                <a class="prev" onclick="plusDivs(-1, 3)">&#10094;</a>
+                                <a class="next" onclick="plusDivs(1, 3)">&#10095;</a>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 3)"></span>
+                                <span class="dot" onclick="currentDiv(2, 3)"></span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="portfolio-text">
@@ -181,131 +148,175 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="grid">
-            <div class="flex-container-blue">
-                <div class="portfolio-text">
-                    <p>BBC Good Food Show Sales Cart</p>
-                    <p>Some text</p>
-                </div>
 
-                <div class="row">
+            <div class="grid">
+                <div class="flex-container-blue">
+                    <div class="portfolio-text">
+                        <p>BBC Good Food Show Sales Cart</p>
+                        <p>Some text</p>
+                    </div>
+
                     <div class="column">
-                        <img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:47vw;padding: 0vw 1vw;" onclick="openModalBbcCart();currentSlide(1)" class="hover-shadow cursor">
-                    </div>
-                </div>
-
-                <div id="BbcCart" class="modal">
-                    <span class="close cursor" onclick="closeModalBbcCart()">&times;</span>
-                    <div class="modal-content">
-
-                        <div class="mySlidesBbcCart">
-                            <div class="numbertext">1 / 1</div>
-                            <img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:100%">
-                        </div>
-
-                        <div class="caption-container">
-                            <p id="captionBbcCart"></p>
-                        </div>
-
-                        <div class="modal-column">
-                            <img class="demo cursor" src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:100%" onclick="currentSlide(1)" alt="BBC Good Food Show Sales Cart">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" target="_blank"><img src="Exhibition/BBC%20GOOD%20FOOD%20SHOW%20SALES%20CART.jpg" style="width:100%"></a>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 4)"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="grid">
+                <div class="flex-container-white">
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/Garmin.jpg" target="_blank"><img src="Exhibition/Garmin.jpg" style="width: 60%"></a>
+                                </div>
 
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 5)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <p>Garmin Display Units</p>
+                        <p>Some text</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="grid">
+                <div class="flex-container-blue">
+                    <div class="portfolio-text">
+                        <p>Real Food Show</p>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 2</div>
+                                    <a href="Exhibition/RESTAURANTS.jpg" target="_blank"><img src="Exhibition/RESTAURANTS.jpg" style="width:100%"></a>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="numbertext">2 / 2</div>
+                                    <a href="Exhibition/REAL%20FOOD%20THEATRE.jpg" target="_blank"><img src="Exhibition/REAL%20FOOD%20THEATRE.jpg" style="width:100%"></a>
+                                </div>
 
+                                <a class="prev" onclick="plusDivs(-1, 6)">&#10094;</a>
+                                <a class="next" onclick="plusDivs(1, 6)">&#10095;</a>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 6)"></span>
+                                <span class="dot" onclick="currentDiv(2, 6)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="grid">
+                <div class="flex-container-white">
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/CANOPY%20FINAL2.jpg" target="_blank"><img src="Exhibition/CANOPY%20FINAL2.jpg" style="width:100%"></a>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 7)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <p>Canopy Stands</p>
+                        <p>Some text</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="grid">
+                <div class="flex-container-blue">
+                    <div class="portfolio-text">
+                        <a id="magnumLink">Magnum Tattoo Stand</a>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/Magnum%20TS%20Final%20drawing%20Portfolio.jpg" target="_blank"><img src="Exhibition/Magnum%20TS%20Final%20drawing%20Portfolio.jpg" style="width:100%"></a>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 8)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="grid">
+                <div class="flex-container-white">
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/Moss%20Electrical%20final.jpg" target="_blank"><img src="Exhibition/Moss%20Electrical%20final.jpg" style="width:100%"></a>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 9)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-text">
+                        <a name="mossLink">Moss Electrical Stand</a>
+                        <p>Some text</p>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-        <div class="grid">
-            <div class="flex-container-white">
-                <div class="garmin"></div>
-                <div class="portfolio-text">
-                    <p>Garmin Display Units</p>
-                    <p>Some text</p>
+            <div class="grid">
+                <div class="flex-container-blue">
+                    <div class="portfolio-text">
+                        <p>AudioLab Theatre</p>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <div class="slideshow w3-container w3-half">
+                            <div class="w3-content w3-display-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 1</div>
+                                    <a href="Exhibition/AudioLab%20theatre%20Plasa%202013%20CROP.jpg" target="_blank"><img src="Exhibition/AudioLab%20theatre%20Plasa%202013%20CROP.jpg" style="width:100%"></a>
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentDiv(1, 10)"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="grid">
-            <div class="flex-container-blue">
-                <div class="portfolio-text">
-                    <p>Real Food Show</p>
-                    <p>Some text</p>
-                </div>
-                <div class="realfood"></div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="flex-container-white">
-                <div class="canopy"></div>
-                <div class="portfolio-text">
-                    <p>Gainsborough Specialist Bathing</p>
-                    <p>Some text</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="flex-container-blue">
-                <div class="portfolio-text">
-                    <a id="magnumLink">Magnum Tattoo Stand</a>
-                    <p>Some text</p>
-                </div>
-                <div class="magnum"></div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="flex-container-white">
-                <div class="moss"></div>
-                <div class="portfolio-text">
-                    <a name="mossLink">Moss Electrical Stand</a>
-                    <p>Some text</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="flex-container-blue">
-                <div class="portfolio-text">
-                    <p>AudioLab Theatre</p>
-                    <p>Some text</p>
-                </div>
-                <div class="container">
-
-
-                </div>
-            </div>
-        </div>
+        <script src="script.js"></script>
 
     </body>
-    
+
     <footer>
         <a>Built by: Abbie Prescott</a>
         <a href="privacyPolicy.html">Privacy Policy</a>
