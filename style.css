@@ -3,6 +3,34 @@
     font-family: 'Jost', sans-serif;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
+p {
+    font-size: 17px;
+}
+
+td {
+    font-size: 17px;
+}
+
+@media screen and (max-width: 768px){
+    p {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 812px){
+    serviceText {
+        text-align: center;
+    }
+}
+
 /*NAV BAR*/
 
 .burger {
@@ -66,20 +94,34 @@
 
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 5px;
+    left: 31px;
 }
 
 .title {
     letter-spacing: 0.5px;
-    font-size: 3.25em;
-    font-weight: 500;
+    font-size: 3.45em;
+    font-weight: 600;
+    letter-spacing: 40px;
 }
 
 .subtitle {
     letter-spacing: 0.75px;
     color: #E1E1E1;
     font-size: 1.5em;
+    letter-spacing: 7px;
+/*    font-family: 'Montserrat', sans-serif;*/
+}
+
+@media screen and (max-width: 800px){
+    .title {
+        font-size: 3em;
+        letter-spacing: 10px;
+    }
+    
+    .subtitle {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 1046px) {
@@ -114,12 +156,18 @@
     width: 100%;
 }
 
+.triPadding {
+    background-color: #1F9EAB;
+    height: 50px; 
+    width: 100vw;
+}
+
 .largeScreenTriShape {
     display: none;
 }
 
 .mainimg {
-    height: 97vh;
+    height: 96vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -139,6 +187,16 @@
     }
 }
 
+@media screen and (max-width: 670px){
+    .triShape {
+        display: none;
+    }
+    
+    .triPadding {
+        display: none;
+    }
+}
+
 .break {
     height: 30px;
     width: 100vw;
@@ -147,7 +205,7 @@
 
 div.heading {
     font-size: 2.2em;
-    color: #155D64;
+    color: black;
     font-weight: 600;
 }
 
@@ -158,17 +216,19 @@ div.heading {
 
 .indexServiceTitle {
     text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
 }
 
 .indexPortfolioTitle {
     text-align: center;
 }
 
-/*
+
 .intro {
-background-color: #A8ACAC;
+    background-color: #A8ACAC;
 }
-*/
+
 
 .intro > p {
     padding: 1em 1em;
@@ -195,14 +255,14 @@ background-color: #A8ACAC;
 
 .serviceText {
     width: 30vw;
-    padding: 1em;
+    padding: 1em 2.5em;
     vertical-align: top;
     text-align: justify;
     text-align-last: center;
 }
 
-hr {
-    width: 20%;
+.serviceTable hr {
+    width: 30%;
     align-content: center;
     margin: auto;
     height: 2px;
@@ -219,14 +279,14 @@ hr {
 }
 
 .parallax-1 {
-    background-image: url("Interior/BAYER%20FRONT%20FINAL.jpg");
+    background-image: url("Extra2/Gainsborough%20working%20drawing%202010.jpg");
     min-height: 400px; 
     width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.2;
 }
 
 .quote {
@@ -246,7 +306,7 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 3em;
+    padding: 1.5em 0em;
 }
 
 .flex-img {
@@ -267,8 +327,34 @@ hr {
     border-collapse: separate;
 }
 
-.portfolio-text {
+.portfolioDiv {
     width: 40vw;    
+    margin: auto;
+}
+
+.portfolioTitle {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.portfolioText {
+    padding: 0 0.75em;
+    font-size: 17px;
+}
+
+.blue {
+    color: #1F9EAB;
+}
+
+.white {
+    color: white;
+}
+
+@media screen and (max-width: 735px){
+    .portfolioTitle {
+        font-size: 1.2em;
+    }
 }
 
 .flex-container-blue {
@@ -291,8 +377,7 @@ hr {
 
 .column {
     float: right;
-    width: 58vw;
-    padding: 1vw;
+    width: 60vw;
 }
 
 
@@ -384,9 +469,13 @@ footer a:hover {
 }
 
 .slideshow {
-    max-width: 1000px;
     position: relative;
     margin: auto;
+}
+
+.slideshowImg {
+    display: block;
+    width: 100%;
 }
 
 .prev, .next {
@@ -411,7 +500,7 @@ footer a:hover {
 
 .prev {
     left: 0; 
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
 }
 
 .prev:hover, .next:hover {
@@ -427,6 +516,10 @@ footer a:hover {
     top: 0;
 }
 
+.dotBg {
+    background-color: grey;
+}
+
 .dot {
     cursor:pointer;
     height: 13px;
@@ -438,8 +531,17 @@ footer a:hover {
     transition: background-color 0.6s ease;
 }
 
+.dotContainer {
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 10px 10px 0px 0px;
+}
+
 .active, .dot:hover {
-    background-color: #155D64;
+    background-color: #1F9EAB;
 }
 
 .fade {
