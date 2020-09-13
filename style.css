@@ -2,10 +2,12 @@
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
+/*
 
 html {
 scroll-behavior: smooth;
 }
+*/
 
 p {
     font-size: 17px;
@@ -110,7 +112,7 @@ td {
     color: #E1E1E1;
     font-size: 1.5em;
     letter-spacing: 7px;
-/*    font-family: 'Montserrat', sans-serif;*/
+    /*    font-family: 'Montserrat', sans-serif;*/
 }
 
 @media screen and (max-width: 800px){
@@ -118,7 +120,7 @@ td {
         font-size: 3em;
         letter-spacing: 10px;
     }
-    
+
     .subtitle {
         font-size: 1.2em;
     }
@@ -162,9 +164,11 @@ td {
     width: 100vw;
 }
 
+/*
 .largeScreenTriShape {
-    display: none;
+display: none;
 }
+*/
 
 .mainimg {
     height: 96vh;
@@ -175,23 +179,25 @@ td {
     overflow: hidden;
 }
 
+/*
 @media screen and (min-width: 1210px){
-    .triShape {
-        display: none;
-    }
-
-    .largeScreenTriShape {
-        display: block;
-        position: absolute;
-        width: 100%;
-    }
+.triShape {
+display: none;
 }
+
+.largeScreenTriShape {
+display: block;
+position: absolute;
+width: 100%;
+}
+}
+*/
 
 @media screen and (max-width: 670px){
     .triShape {
         display: none;
     }
-    
+
     .triPadding {
         display: none;
     }
@@ -316,7 +322,10 @@ div.heading {
 
 .indexPortfolioText {
     text-align: center;
-    padding: 1em 1em 3em;
+    padding: 1em 3em 3em;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: center;
 }
 
 
@@ -339,8 +348,8 @@ div.heading {
 }
 
 .portfolioText {
-    padding: 0 0.75em;
-    font-size: 17px;
+    padding: 0 3em;
+    font-size: 18px;
 }
 
 .blue {
@@ -422,14 +431,51 @@ input[type=submit]:hover {
 
 /* PRIVACY POLICY */
 
+.privacyBody {
+    margin: 0 1em;
+}
+
+.privacyTitle {
+    font-size: 3.4em;
+    font-weight: 600;
+    padding-top: 0.5em;
+}
+
 .privacyHeader {
-    font-size: 1.2em;
-    padding: 0.5em 0.1em;
+    font-size: 1.5em;
+    padding: 0.5em 16px;
     font-weight: 600;
 }
 
 .privacyText {
-    padding: 0.5em 1em;
+    padding: 0.5em 16px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.privacyTable {
+    width: 100%;
+}
+
+.privacy-header-tr {
+    background-color: lightgray;
+}
+
+.privacyCell{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.alignTop {
+    vertical-align: top;
+    padding: 1em;
+}
+
+.privacyPadding {
+    padding: 0.5em;
 }
 
 /*FOOTER*/
