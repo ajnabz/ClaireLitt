@@ -2,12 +2,12 @@
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
-/*
+
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-*/
+
 
 p {
     font-size: 17px;
@@ -15,22 +15,6 @@ p {
 
 td {
     font-size: 17px;
-}
-
-@media screen and (max-width: 768px){
-    p {
-        font-size: 16px;
-    }
-
-    td {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 812px){
-    serviceText {
-        text-align: center;
-    }
 }
 
 /*NAV BAR*/
@@ -65,7 +49,7 @@ td {
 .burger a.activeLogo {
     float: left;
     color: #333;
-    padding: 5px 30px;
+    padding: 5px 20px;
     text-decoration: none;
     margin: 0;
 }
@@ -83,6 +67,7 @@ td {
     height: 25px;
     vertical-align: middle;
 }
+
 
 
 /*INDEX*/
@@ -115,37 +100,6 @@ td {
     /*    font-family: 'Montserrat', sans-serif;*/
 }
 
-@media screen and (max-width: 800px){
-    .title {
-        font-size: 3em;
-        letter-spacing: 10px;
-    }
-
-    .subtitle {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (min-width: 1046px) {
-    .title {
-        font-size: 4.5em;
-    }
-
-    .subtitle{
-        font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 1700px) {
-    .title {
-        font-size: 5.5em;
-    }
-
-    .subtitle{
-        font-size: 3em;
-    }
-}
-
 .aboutme-title {
     text-align: center;
     font-weight: 600;
@@ -164,11 +118,9 @@ td {
     width: 100vw;
 }
 
-/*
-.largeScreenTriShape {
-display: none;
+.triMobile {
+    display: none;
 }
-*/
 
 .mainimg {
     height: 96vh;
@@ -177,30 +129,6 @@ display: none;
     margin-right: auto;
     background-color: black;
     overflow: hidden;
-}
-
-/*
-@media screen and (min-width: 1210px){
-.triShape {
-display: none;
-}
-
-.largeScreenTriShape {
-display: block;
-position: absolute;
-width: 100%;
-}
-}
-*/
-
-@media screen and (max-width: 670px){
-    .triShape {
-        display: none;
-    }
-
-    .triPadding {
-        display: none;
-    }
 }
 
 .break {
@@ -216,7 +144,7 @@ div.heading {
 }
 
 .indexIntroTitle {
-    padding: 1em 0.5em 0.2em 0.5em;
+    padding: 0.5em 0.5em 0.2em 0.5em;
     text-align: center;
 }
 
@@ -254,6 +182,12 @@ div.heading {
     width: 100%;
 }
 
+.serviceTableMobile {
+    padding: 0em 2em 1em 2em;
+    width: 100%;
+    display: none;
+}
+
 .serviceHeader {
     width: 30vw;
     padding-top: 1.3em;
@@ -267,7 +201,7 @@ div.heading {
     text-align-last: center;
 }
 
-.serviceTable hr {
+.serviceTable-hr {
     width: 30%;
     align-content: center;
     margin: auto;
@@ -280,13 +214,13 @@ div.heading {
     position: relative;
     text-align: center;
     color: black;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 
 .parallax-1 {
-    background-image: url("Extra2/Gainsborough%20working%20drawing%202010.jpg");
-    min-height: 400px; 
+    background-image: url("InteriorGraphicImg/Gainsborough%20working%20drawing%202010.jpg");
+    min-height: 500px; 
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -322,7 +256,7 @@ div.heading {
 
 .indexPortfolioText {
     text-align: center;
-    padding: 1em 3em 3em;
+    padding: 1em 1.5em 1.5em;
     font-size: 18px;
     text-align: justify;
     text-align-last: center;
@@ -347,6 +281,26 @@ div.heading {
     padding-bottom: 1em;
 }
 
+.portfolioTitleMobile-blue {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    background-color: #1F9EAB;
+    color: white;
+    margin: auto;
+    display: none;
+}
+
+.portfolioTitleMobile-white {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    background-color: white;
+    color: #1F9EAB;
+    margin: auto;
+    display: none;
+}
+
 .portfolioText {
     padding: 0 3em;
     font-size: 18px;
@@ -358,12 +312,6 @@ div.heading {
 
 .white {
     color: white;
-}
-
-@media screen and (max-width: 735px){
-    .portfolioTitle {
-        font-size: 1.2em;
-    }
 }
 
 .flex-container-blue {
@@ -386,7 +334,8 @@ div.heading {
 
 .column {
     float: right;
-    width: 60vw;
+    width: 57vw;
+    margin: auto;
 }
 
 
@@ -505,9 +454,7 @@ footer a:hover {
 
 
 
-
-
-
+/*SLIDESHOW*/
 
 .mySlides {
     display:none; 
@@ -522,6 +469,7 @@ footer a:hover {
 .slideshowImg {
     display: block;
     width: 100%;
+    padding-bottom: 6px;
 }
 
 .prev, .next {
@@ -610,4 +558,105 @@ footer a:hover {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 670px){
+    .triShape {
+        display: none;
+    }
+    
+    .triMobile {
+        display: block;
+    }
+
+    .triPadding {
+        display: none;
+    }
+
+    .quote {
+        font-size: 1.2em;
+    }
+
+    .quoteSub {
+        font-size: 1em;
+    }
+
+    .indexPortfolioText {
+        font-size: 16px;
+    }
+
+    .serviceTable {
+        display: none;
+    }
+
+    .serviceTableMobile {
+        display: block;
+        padding: 0.2em;
+        margin: auto;
+    }
+
+    .serviceText {
+        width: 50vw;
+        padding: 0.4em;
+        vertical-align: top;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    p {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 812px){
+    serviceText {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .burger a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .portfolioTitle {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:500px){
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-img {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .portfolioText {
+        padding: 0 0.5em;
+        font-size: 16px;
+    }
+
+    .portfolioTitleMobile-white{
+        display: block;
+    }
+
+    .portfolioTitleMobile-blue{
+        display: block;
+    }
+
+    .portfolioTitle {
+        display: none;
+    }
 }
