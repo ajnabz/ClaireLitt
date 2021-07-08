@@ -123,12 +123,36 @@ td {
 }
 
 .mainimg {
-    height: 96vh;
+    height: 75vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
     overflow: hidden;
+    margin-top: 20vh;
+}
+
+.mainimgContainer {
+    height: 96vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+@media screen and (max-width: 670px){
+    .mainimg {
+        height: auto;
+        width: 100vw;
+        margin-top: 10vh;
+    }
+    
+    .mainimgContainer {
+        height: auto;
+        width: 100vw;
+    }
+    
+    .img-container {
+        height: auto;
+    }
 }
 
 .break {
@@ -228,6 +252,16 @@ div.heading {
     background-size: cover;
     opacity: 0.2;
 }
+
+.parallax-mobile {
+    background-image: url(InteriorGraphicImg/Gainsborough%20working%20drawing%202010.jpg);
+    height: 100%;
+    width: auto;
+    background-position: center;
+    opacity: 0.2;
+    display: none;
+}
+
 
 .quote {
     font-size: 1.8em;
@@ -526,10 +560,10 @@ footer a:hover {
 }
 
 .dotContainer {
-    width: 70px;
+    width: 20%;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 40%;
     background-color: rgb(0,0,0,0.4);
     border-radius: 10px 10px 0px 0px;
 }
@@ -600,6 +634,14 @@ footer a:hover {
         padding: 0.4em;
         vertical-align: top;
         text-align: center;
+    }
+    
+    .parallax-1 {
+        display: none;
+    }
+    
+    .parallax-mobile {
+        display: block;
     }
 }
 
