@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clairelitt.co.uk/sitemap.xml
